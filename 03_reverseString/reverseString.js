@@ -1,4 +1,10 @@
-const reverseString = function() {
+const reverseString = function(inputString) {
+    let inverseArray = inputString.split("");
+    let rightArray = [];
+    for (n = inverseArray.length; n>=0; n--) {
+        rightArray.push(inverseArray[n]);
+    }
+    return  rightArray.join("");
 
 };
 
